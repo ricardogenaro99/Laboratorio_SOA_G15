@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN BOOTSWATCH Litera -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/litera/bootstrap.min.css"
+        integrity="sha384-enpDwFISL6M3ZGZ50Tjo8m65q06uLVnyvkFO3rsoW0UC15ATBFz3QEhr3hmxpYsn" crossorigin="anonymous">
+    <!-- CDN FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>Dinamica SOA</title>
+</head>
+
+<body>
+    <div class="min-vh-100 d-flex bg-dark">
+        <div class="container m-auto">
+            <div class="col-md-6 m-auto">
+                <div class="card my-5 bg-secondary">
+                    <div class="card-body p-5">
+                        <h2 class="my-2 text-center">Formulario de Datos</h2>
+                        <h4 class="my-4 text-center">Calculemos tu edad</h4>
+                        <form class="container" action="/validate" method="post">
+                            <div class="form-group">
+                                <input type="text" name="nombres" placeholder="Ingresa tu nombre" title="Nombres" id="nombres" class="form-control rounded" required autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="correo" placeholder="Ingresa tu correo electrónico" title="Correo Electrónico" id="correo" class="form-control rounded" required autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <input type="date" name="fecha_nac" title="Fecha de Nacimiento" id="fecha_nac" class="form-control rounded" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
